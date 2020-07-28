@@ -1,0 +1,25 @@
+#future-steps {
+  color: red;
+}
+
+.emphasized {
+  font-size: 1.2em;
+}
+
+
+.gdbar img {
+  width: 300px;
+  height: 150px;
+  margin: 8px 8px;
+}
+
+.gdbar {
+  width: 400px;
+  height: 170px;
+}
+
+slides > slide:not(.nobackground):before {
+  width: 150px;
+  height: 75px;
+  background-size: 150px 75px;
+}
