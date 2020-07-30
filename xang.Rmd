@@ -1,22 +1,67 @@
 ---
-title: "Presentation Ninja"
+title: "The best template so far"
 subtitle: "⚔<br/>with xaringan"
-author: "Yihui Xie"
+author: "Copied from Yihui Xie"
 institute: "RStudio, PBC"
 date: "2016/12/12 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
+    includes:
+      in_header: 
+       - repeatSlides.html
+       - footer.html
+    yolo:
+      img: 12.jpg
+      times: 5
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-      autoplay: 30000
-      countdown: 25000
+      autoplay: 200000
+      countdown: 10000
+      ratio: 16:9
       chakra: libs/remark-latest.min.js
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+    css: ["footer-header.css", "default", "kunoichi", "ninjutsu", "rladies-fonts", "w3.css"]
+    
+---
+
+layout: true
+
+background-image: url(logo.png)
+background-position: 100% 100%
+background-size: 20%
+  
+<div class="my-header">Made by PA. Ref: https://github.com/yihui/xaringan/wiki </div>
+
+
+<div class="my-footer" style="max-width:100%">
+  <div class="mySlidess w3-container w3-red">
+    <h1><b>Did You Know?</b></h1>
+    <h1><i>We plan to sell trips to the moon in the 2020s</i></h1>
+  </div>
+
+  <img class="mySlidess" src="img_monterosso.jpg" style="width:100%">
+
+  <div class="mySlidess w3-container w3-xlarge w3-white w3-card-4">
+    <p><span class="w3-tag w3-yellow">New!</span>
+    <p>6 Crystal Glashhhhhhhhhhhhhhhhhhhhhses</p>
+    <p>Only $99 !!!</p>
+  </div>
+
+  <img class="mySlidess" src="img_manarola.jpg" style="width:100%">
+</div>
+
+
 ---
 
 background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
+
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
@@ -614,3 +659,29 @@ class: center, middle
 Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
 
 The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.org/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+
+---
+
+class: center
+
+# Additional ideas
+
+* [Importing from Microsoft PowerPoint](https://github.com/yihui/xaringan/wiki/Importing-from-Microsoft-PowerPoint)
+
+* [Title slides etc.](https://github.com/yihui/xaringan/wiki/Title-slide)
+
+* For no slide numbers: Add this to the css file: *.remark-slide-number { display: none; }*
+
+A reference on gifs and animations: https://annakrystalli.me/talks/xaringan/xaringan.html#1
+
+Continue lopping slides: https://gist.github.com/gadenbuie/aeb16bd1445bdc1e0294465f46e3de50
+
+More on animations: https://github.com/yihui/xaringan/issues/184
+
+To add videos, go here: https://stackoverflow.com/questions/58381602/background-video-in-xaringan-slides
+
+Overall:https://bookdown.org/yihui/rmarkdown/xaringan.html
+
+
+theme generator for r code and results: https://pkg.garrickadenbuie.com/xaringanthemer/articles/xaringanthemer.html
+
