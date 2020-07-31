@@ -1,0 +1,43 @@
+---
+title: ''
+author: PA
+date: 2020-07-29
+output:
+  xaringan::moon_reader:
+  lib_dir: libs
+  nature:
+    highlightStyle: github
+    highlightLines: true
+    countIncrementalSlides: false
+---
+
+
+
+---
+
+
+
+---
+
+
+
+---
+
+
+
+---
+
+
+---
+
+
+
+---
+
+
+
+---
+
+
+---
+
