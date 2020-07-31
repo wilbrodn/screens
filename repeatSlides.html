@@ -2,7 +2,7 @@
 // Adapted from https://github.com/gnab/remark/wiki/Configuration#using-javascript-to-create-a-continuously-looping-slideshow
 // every 8 seconds (change to your desired interval), fire the helper function
 document.addEventListener("DOMContentLoaded", function() {
-  setInterval(function () {carousel(slideshow)}, 20000);
+  setInterval(function () {carousel(slideshow)}, 2000);
   
   function carousel(varObject) {
   	var slideCount = varObject.getSlideCount()-1;
@@ -15,3 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 </script>
+
+
+
